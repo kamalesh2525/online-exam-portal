@@ -11,9 +11,9 @@ const nav = [
     { to: '/admin/results', icon: '📊', label: 'Results' },
     { to: '/admin/reports', icon: '📈', label: 'Reports' },
   ]},
-  { section: 'System', links: [
-    { to: '/admin/settings', icon: '⚙️', label: 'Settings' },
-  ]},
+  // { section: 'System', links: [
+  //   { to: '/admin/settings', icon: '⚙️', label: 'Settings' },
+  // ]},
 ];
 
 export default function AdminLayout({ title, topbarRight, children }) {
@@ -43,6 +43,7 @@ export default function AdminLayout({ title, topbarRight, children }) {
               <div className="name">Admin</div>
               <div className="email">admin@exampro.com</div>
             </div>
+            <Link to="/">Logout</Link>
           </div>
         </div>
       </aside>

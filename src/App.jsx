@@ -39,7 +39,7 @@ export default function App() {
         <Route path="/admin/questionbank" element={<AdminQuestionBank />} />
         <Route path="/admin/results" element={<AdminResults />} />
         <Route path="/admin/reports" element={<AdminReports />} />
-        <Route path="/admin/settings" element={<AdminSettings />} />
+        {/* <Route path="/admin/settings" element={<AdminSettings />} /> */}
 
         <Route path="/student/dashboard" element={<StudentDashboard />} />
         <Route path="/student/exams" element={<StudentExams />} />

@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { DB, getCurrentStudentId } from '../db.js';
 
 const nav = [
@@ -50,6 +50,7 @@ export default function StudentLayout({ title, topbarRight, children }) {
               <div className="name">{me.name}</div>
               <div className="email">{me.email}</div>
             </div>
+            <Link to="/">Logout</Link>
           </div>
         </div>
       </aside>
